@@ -16,6 +16,8 @@ function App() {
         }}>
           <Stack.Screen name="Início" component={Home} options={{ title: 'Início' }} />
           <Stack.Screen name="Transferências" component={Transfer} options={{ title: 'Transferências' }} />
+          <Stack.Screen name="Pesquisa" component={Search} options={{ title: 'Pesquisa' }} />
+          <Stack.Screen name="Explorar" component={Explore} options={{ title: 'Explorar' }} />
         </Stack.Navigator>
       </NavigationContainer >
   );
