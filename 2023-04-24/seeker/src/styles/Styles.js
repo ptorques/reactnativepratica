@@ -28,7 +28,7 @@ export default StyleSheet.create({
         paddingHorizontal: 30,
         marginTop: 10,
         marginBottom: "60%",
-        backgroundColor: "#3d4177"
+        backgroundColor: "#4f58c4"
     },
     textinput: {
         width: '65%',

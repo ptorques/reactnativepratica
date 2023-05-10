@@ -10,6 +10,8 @@ import {
 import styles from '../styles/Styles.js'
 
 
+
+
 export class Home extends Component {
   render() {
     return (
@@ -28,7 +30,9 @@ export class Home extends Component {
           <Text style={{ fontSize: 40, color: "#bbc0f8", marginBottom: 30 }}>Entrar</Text>
           <TextInput style={styles.textinput} placeholder={"Nome de usuário"} placeholderTextColor={"#bbc0f8"}></TextInput>
           <TextInput style={styles.textinput} placeholder={"Senha"} placeholderTextColor={"#bbc0f8"}></TextInput>
-          <TouchableOpacity style={styles.button}><Text style={{ color: "#87888e" }}>ENVIAR</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() =>
+            this.props.navigation.navigate('Transferências')}
+          ><Text style={{ color: "#fff" }}>ENVIAR</Text></TouchableOpacity>
           <Text style={{ color: "#fff", marginTop: 30 }}>Não tem uma conta? Basta digitar um nome de usuário exclusivo e um será criado para você.</Text>
         </View>
 
