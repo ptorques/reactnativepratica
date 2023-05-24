@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
       backgroundColor: "#f7f7f8",
       padding: 15,
       borderRadius: 8,
-      marginVertical: 10
+      marginVertical: 10,
+      paddingVertical: 12
     },
     title: {
         fontSize: 20, 
@@ -27,16 +28,16 @@ const styles = StyleSheet.create({
     },
     button: {
       width: "80%",
-      backgroundColor: '#647ac6',
+      backgroundColor: '#d9d8da',
       padding: 15,
       borderRadius: 10,
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: "10%"
+
     },
     buttonSign: {
         width: "80%",
-        backgroundColor: '#d9d8da',
+        backgroundColor: '#000',
         padding: 15,
         borderRadius: 10,
         alignItems: 'center',
