@@ -2,7 +2,7 @@ import { Text, Image, View, TextInput, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import styles from './style';
 
-export default function Signin() {
+export default function Signin( {navigation}: {navigation: any} ) {
     return (
         <>
             <View style={styles.container}>
@@ -16,9 +16,11 @@ export default function Signin() {
                 <TextInput style={styles.TextInput} placeholder='Telefone' />
                 <TextInput style={styles.TextInput} placeholder='Senha' />
                 <TextInput style={styles.TextInput} placeholder='Confirme a senha' />
-                <TouchableOpacity style={styles.buttonSign}><Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold' }}>Criar</Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => 
+                navigation.navigate("Ads")} style={styles.buttonSign}><Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold' }}>Criar</Text></TouchableOpacity>
                 <Text style={{ marginTop: 35, marginBottom: 5}}>Já tem uma conta?</Text>
-                <TouchableOpacity style={styles.button}><Text style={{ color: "#000", fontSize: 15, fontWeight: 'bold' }}>Ir para o login</Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => 
+                navigation.navigate("Login")}  style={styles.button}><Text style={{ color: "#000", fontSize: 15, fontWeight: 'bold' }}>Ir para o login</Text></TouchableOpacity>
             </View>
         </>
     );

@@ -13,7 +13,8 @@ export default function Login( {navigation}: {navigation: any} ) {
                 <Text>Acesse sua conta</Text>
                 <TextInput style={styles.TextInput} placeholder='Email' />
                 <TextInput style={styles.TextInput} placeholder='Senha' />
-                <TouchableOpacity style={styles.button}><Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold' }}>Entrar</Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => 
+                navigation.navigate("Ads")} style={styles.button}><Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold' }}>Entrar</Text></TouchableOpacity>
             </View>
             <View style={styles.footer}>
                 <Text>Ainda não tem acesso?</Text>
