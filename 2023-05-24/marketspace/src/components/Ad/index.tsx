@@ -12,12 +12,12 @@ type Props = {
 export default function Ad({nome, image, price}: Props) {
 
     return (
-        <>
-            <TouchableOpacity style={styles.container}>
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.touch}>
                 <Image source={image}/> 
                 <Text style={styles.title}>{ nome }</Text>
-                <Text>{ price }</Text>
+                <Text style={styles.price}>{ price }</Text>
             </TouchableOpacity>
-        </>
+        </View>
     );
 }
