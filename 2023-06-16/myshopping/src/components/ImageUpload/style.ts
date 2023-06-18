@@ -7,26 +7,24 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    title: {
-        fontSize: 30, 
-        fontWeight: 'bold',
-        marginTop: 10
-    },
     subtitle: {
-        fontSize: 15, 
-        fontWeight: '100',
-        marginBottom: "10%"
+        fontSize: 15,
+        color: "#c7c7c7",
+        textAlign: "center"
     },
-    listEmptyText: {
-        color: '#888888',
-        fontSize: 14,
-        textAlign: 'center',
-        fontWeight: "bold",
+    upload: {
+      flex: 2,
+      margin: 20
     },
-    emptyList: {
+    border: {
+      height: 300,
+      width: 300,
+      borderStyle: "dashed",
+      borderWidth: 3,
+      borderColor: "#c7c7c7",
       alignItems: 'center',
       justifyContent: 'center',
-      margin: 20
+      marginBottom: 10
     }
   });
 

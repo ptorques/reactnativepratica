@@ -13,17 +13,18 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator screenOptions={{
-      headerStyle: {height: "15%",backgroundColor: "#7e7eec"},
-      headerTitleStyle: {},
+      headerStyle: {backgroundColor: "#7e7eec"},
+      headerTitleStyle: {color: "#fff"},
+      headerTitleAlign: "center",
       tabBarStyle: {height: "7%",paddingBottom:5},
       tabBarActiveTintColor: "#827ddc"
     }}>
       <Tab.Screen name="Login" component={Login} options={{
+        headerShown: false,
         tabBarItemStyle: {display: 'none'},
         tabBarStyle: {display: 'none'}, 
       }}/>
       <Tab.Screen name="Comprovantes" component={Comprovantes} options={{
-        headerTitle: "Comprovantes",
         tabBarIcon: () => <MaterialIcons name="shopping-cart" size={24} color="#bbbbbb" />
       }}/>
       <Tab.Screen name="Produtos" component={Produtos} options={{

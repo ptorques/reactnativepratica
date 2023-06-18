@@ -16,14 +16,15 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 30, 
-        fontWeight: 'bold',
         marginTop: 10,
         color: "#827ddc"
     },
     subtitle: {
-        fontSize: 15, 
+        fontSize: 12.5, 
         marginBottom: "10%",
-        color: "#827ddc"
+        color: "#827ddc",
+        width: "80%",
+        textAlign: "center"
     },
     button: {
       width: "80%",
